@@ -1,3 +1,6 @@
+# misc
+*.*.cache
+
 # build output
 dist
 
