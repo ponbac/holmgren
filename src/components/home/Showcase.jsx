@@ -19,12 +19,12 @@ export default function Showcase() {
 
         <div className="bg-gray-400 bg-opacity-60 bg-clip-border border-4 border-gray-300 rounded-2xl p-2 px-5 text-center lg:w-2/3 lg:mx-auto">
           <h1 className="text-4xl text-gray-900 mb-2 lg:text-6xl lg:text-left">
-            Vi fixar din nästa&nbsp;
+            Holmgrens Bygg fixar&nbsp; <br/>
             <ReactTypingEffect
-              text={["altan.", "utbyggnad.", "renovering.", "takbyte."]}
+              text={["din nya altan.", "din kommande utbyggnad.", "din efterlängtade renovering.", "ditt takbyte.", "vinterns snöskottning."]}
               typingDelay={1500}
-              eraseSpeed={100}
-              eraseDelay={2500}
+              eraseSpeed={80}
+              eraseDelay={3000}
               cursorRenderer={(cursor) => <h1>{cursor}</h1>}
               displayTextRenderer={(text, i) => {
                 return (
