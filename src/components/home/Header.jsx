@@ -16,8 +16,8 @@ export default function Header() {
             <NavItem text='Kontakt' />
           </ul>
         </div>
-        <div className="flex sm:hidden flex-1 justify-end">
-          <i className="text-2xl fas fa-bars"></i>
+        <div className="flex sm:hidden flex-1 justify-end mr-6">
+          <i className="text-4xl fas fa-bars"></i>
         </div>
       </nav>
     </header>

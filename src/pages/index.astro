@@ -9,14 +9,19 @@ import Footer from '../components/home/Footer.jsx';
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Holmgrens bygg och service. Hjälper dig med allt från takskottning till husbygge! Sundsvall, Alnö.">
 
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     
     <title>Astro + TailwindCSS</title>
     <link rel="stylesheet" type="text/css" href="/global.css">
+
+    <!-- TODO: Extract this into a separate file? Include only the relevant icon? -->
+    <script src="https://kit.fontawesome.com/914921b4ef.js" crossorigin="anonymous"></script>
   </head>
 
-  <body class="bg-gray-400">
+  <body class="bg-gray-400 bg-house bg-auto bg-no-repeat">
     <Header />
     <Showcase client:load />
     <About />

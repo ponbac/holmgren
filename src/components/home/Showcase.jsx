@@ -17,7 +17,7 @@ export default function Showcase() {
           <img src={profile} alt="" className="w-10 rounded-full ml-1" />
         </div>
 
-        <div className="px-5 text-center lg:w-2/3 lg:mx-auto">
+        <div className="bg-gray-400 bg-opacity-60 bg-clip-border border-4 border-gray-300 rounded-2xl p-2 px-5 text-center lg:w-2/3 lg:mx-auto">
           <h1 className="text-4xl text-gray-900 mb-2 lg:text-6xl lg:text-left">
             Vi fixar din nästa&nbsp;
             <ReactTypingEffect
