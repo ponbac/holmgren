@@ -9,14 +9,6 @@ export default function Showcase() {
         id="home"
         className="pb-20 lg:flex lg:max-w-7xl lg:mx-auto lg:py-32"
       >
-        <div className="flex items-center justify-center py-10 lg:items-start lg:justify-start">
-          <div className="mr-1">
-            <h4 className="font-bold">Thomas Sankara</h4>
-            <p className="text-gray-500 text-sm">Lorem, ipsum dolor.</p>
-          </div>
-          <img src={profile} alt="" className="w-10 rounded-full ml-1" />
-        </div>
-
         <div className="bg-gray-400 bg-opacity-60 bg-clip-border border-4 border-gray-300 rounded-2xl p-2 px-5 text-center lg:w-2/3 lg:mx-auto">
           <h1 className="text-4xl text-gray-900 mb-2 lg:text-6xl lg:text-left">
             Holmgrens Bygg fixar&nbsp; <br/>
@@ -39,7 +31,7 @@ export default function Showcase() {
             />
           </h1>
           <p className="font-bold mt-5 mb-4 lg:text-left">
-            Author: Thomas Sankara
+            Author: Pontus Backman
           </p>
           <p className="lg:text-left">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
