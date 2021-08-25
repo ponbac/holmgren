@@ -1,6 +1,5 @@
 import React from "react";
 import ReactTypingEffect from "react-typing-effect";
-import profile from "../../../public/images/grid-1.jpeg";
 
 export default function Showcase() {
   return (
