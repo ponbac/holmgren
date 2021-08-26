@@ -10,10 +10,10 @@ export default function Header() {
         </div>
         <div className="">
           <ul className="hidden sm:flex flex-1 justify-end items-center gap-12 text-white uppercase text-s font-bold drop-shadow-xl">
-            <NavItem text='Hem' />
-            <NavItem text='Våra projekt' />
-            <NavItem text='Om oss' />
-            <NavItem text='Kontakt' />
+            <NavItem text="Hem" link="/" />
+            <NavItem text="Våra projekt" />
+            <NavItem text="Om oss" />
+            <NavItem text="Kontakt" link="/kontakt" />
           </ul>
         </div>
         <div className="flex sm:hidden flex-1 justify-end mr-6">
@@ -24,6 +24,10 @@ export default function Header() {
   );
 
   function NavItem(props) {
-    return <li className="cursor-pointer hover:text-gray-300 hover:underline">{props.text}</li>;
+    return (
+      <li className="cursor-pointer hover:text-gray-300 hover:underline">
+        <a href={props.link}>{props.text}</a>
+      </li>
+    );
   }
 }

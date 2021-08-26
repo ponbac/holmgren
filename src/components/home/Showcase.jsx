@@ -6,13 +6,19 @@ export default function Showcase() {
     <>
       <section
         id="home"
-        className="pb-20 lg:flex lg:max-w-7xl lg:mx-auto lg:py-32"
+        className="pb-20 lg:max-w-7xl lg:mx-auto py-8 lg:py-32 px-4 lg:px-0"
       >
-        <div className="bg-gray-400 bg-opacity-60 bg-clip-border border-4 border-gray-300 rounded-2xl p-2 px-5 text-center lg:w-2/3 lg:mx-auto">
-          <h1 className="text-4xl text-gray-900 mb-2 lg:text-6xl lg:text-left">
-            Holmgrens Bygg fixar&nbsp; <br/>
+        <div className="flex flex-col justify-start items-center p-2 px-5 text-center lg:w-2/3 lg:mx-auto bg-white bg-opacity-50 rounded-xl shadow-md md:max-w-4xl">
+          <h1 className="text-4xl mb-2 lg:text-6xl lg:text-center leading-tight font-bold text-black">
+            Holmgrens Bygg fixar&nbsp; <br />
             <ReactTypingEffect
-              text={["din nya altan.", "din kommande utbyggnad.", "din efterlängtade renovering.", "ditt takbyte.", "vinterns snöskottning."]}
+              text={[
+                "din nya altan.",
+                "din kommande utbyggnad.",
+                "din renovering.",
+                "ditt takbyte.",
+                "vinterns snöskottning.",
+              ]}
               typingDelay={1500}
               eraseSpeed={80}
               eraseDelay={3000}
@@ -29,19 +35,18 @@ export default function Showcase() {
               }}
             />
           </h1>
-          <p className="font-bold mt-5 mb-4 lg:text-left">
-            Author: Pontus Backman
-          </p>
-          <p className="lg:text-left">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Repellendus tempora cum possimus animi dignissimos accusantium unde
-            maiores, nisi natus ducimus atque ipsam placeat dolor necessitatibus
-            eius totam, doloremque quod, nostrum maxime molestias! Repellat
-            tenetur laborum cumque tempore veniam nostrum fugiat eveniet, enim
-            voluptate dicta illo vero vel ducimus hic quaerat.
-          </p>
+          <div className="flex gap-4 mt-9 mb-2 items-center">
+            <ShowcaseButton text="Kontakta oss" link="/kontakt"/>
+            <ShowcaseButton text="Läs mer" link="#omoss"/>
+          </div>
         </div>
       </section>
     </>
   );
+
+  function ShowcaseButton(props) {
+    return <div className="w-44 h-11 rounded-xl flex items-center justify-center border-2 border-black transition-colors	hover:bg-black hover:text-white hover:border-white cursor-pointer">
+      <a href={props.link} className="font-bold text-lg uppercase">{props.text}</a>
+    </div>;
+  }
 }
