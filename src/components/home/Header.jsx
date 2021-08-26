@@ -3,8 +3,8 @@ import logo from "../../../public/images/logo_big.png";
 
 export default function Header() {
   return (
-    <header className="flex justify-center">
-      <nav className="container flex items-center mt-5 justify-around">
+    <header className={"flex justify-center sticky top-0"}>
+      <nav className="container flex items-center mt-5 mb-5 justify-around">
         <div className="w-44 object-contain lg:pl-0 pl-8">
           <img src={logo} alt="Holmgrens bygg och service" />
         </div>
