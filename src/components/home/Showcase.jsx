@@ -2,6 +2,14 @@ import React from "react";
 import ReactTypingEffect from "react-typing-effect";
 
 export default function Showcase() {
+  const showcaseTexts = [
+    "din nya altan.",
+    "din kommande utbyggnad.",
+    "din renovering.",
+    "ditt takbyte.",
+    "vinterns snöskottning.",
+  ];
+
   return (
     <>
       <section
@@ -12,13 +20,7 @@ export default function Showcase() {
           <h1 className="text-4xl mb-2 lg:text-6xl lg:text-center leading-tight font-bold text-black">
             Holmgrens Bygg fixar&nbsp; <br />
             <ReactTypingEffect
-              text={[
-                "din nya altan.",
-                "din kommande utbyggnad.",
-                "din renovering.",
-                "ditt takbyte.",
-                "vinterns snöskottning.",
-              ]}
+              text={showcaseTexts.sort(() => Math.random() - 0.5)}
               typingDelay={1500}
               eraseSpeed={80}
               eraseDelay={3000}
