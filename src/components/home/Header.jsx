@@ -38,7 +38,7 @@ export default function Header() {
   function NavIcon(props) {
     return (
       <li className="cursor-pointer h-8 w-8 hover:animate-bounce -mr-10">
-        <a href={props.link} target="_blank"><img src={props.image} alt={props.alt} /></a>
+        <a href={props.link} target="_blank" rel="noreferrer"><img src={props.image} alt={props.alt} /></a>
       </li>
     );
   }
