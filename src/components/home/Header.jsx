@@ -1,5 +1,7 @@
 import React from "react";
 import logo from "../../../public/images/logo_big.png";
+import fb from "../../../public/images/facebook.png";
+import insta from "../../../public/images/instagram.png";
 
 export default function Header() {
   return (
@@ -11,9 +13,11 @@ export default function Header() {
         <div className="">
           <ul className="hidden sm:flex flex-1 justify-end items-center gap-12 text-white uppercase text-s font-bold drop-shadow-xl">
             <NavItem text="Hem" link="/" />
-            <NavItem text="Våra projekt" />
-            <NavItem text="Om oss" />
+            <NavItem text="Våra projekt" link="#galleri" />
+            <NavItem text="Om oss" link="#omoss"/>
             <NavItem text="Kontakt" link="/kontakt" />
+            <NavIcon image={fb} alt="Facebook" link="https://www.facebook.com/Holmgrens-Bygg-Service-101504525041548"></NavIcon>
+            <NavIcon image={insta} alt="Instagram" link="https://www.instagram.com/holmgrensbyggservice/"></NavIcon>
           </ul>
         </div>
         <div className="flex sm:hidden flex-1 justify-end mr-6">
@@ -27,6 +31,14 @@ export default function Header() {
     return (
       <li className="cursor-pointer hover:text-gray-300 hover:underline">
         <a href={props.link}>{props.text}</a>
+      </li>
+    );
+  }
+
+  function NavIcon(props) {
+    return (
+      <li className="cursor-pointer h-8 w-8 hover:animate-bounce -mr-10">
+        <a href={props.link} target="_blank"><img src={props.image} alt={props.alt} /></a>
       </li>
     );
   }
