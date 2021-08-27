@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .spacer-waves {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/shapes/layered-waves-haikei.svg");
+  }
+
+  .bg-spacer-waves {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/shapes/bg-layered-waves-haikei.svg");
+  }
+
+  .flip {
+    transform: rotate(180deg);
+  }
+}

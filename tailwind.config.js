@@ -6,7 +6,10 @@ module.exports = {
       backgroundImage: theme => ({
         'house': "url('/images/house-bg.jpg')",
         'house-min': "url('/images/house-bg-min.jpg')",
-       })
+       }),
+       colors: {
+         navy: '#001220',
+       }
     }
   }
 }

@@ -2,8 +2,10 @@ import React from "react";
 
 export default function Gallery() {
   return (
-    <section id="galleri">
-      <div className="grid grid-cols-2 mt-24 mx-4">
+    <section id="galleri" className="">
+      <div className="spacer-waves"/>
+      <div className="spacer-waves flip bg-navy "/>
+      <div className="grid grid-cols-2 mt-24 mx-4 bg-navy">
         <div>
           <iframe
             className="rounded-xl shadow-md overflow-hidden"
