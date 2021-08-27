@@ -24,8 +24,8 @@ import Footer from '../components/home/Footer.jsx';
   <body class="bg-gray-400 bg-house-min bg-auto bg-no-repeat">
     <Header />
     <Showcase client:load />
-    <About />
-    <Gallery />
-    <Footer />
+    <About client:visible />
+    <Gallery client:visible />
+    <Footer client:idle />
   </body>
 </html>
