@@ -8,13 +8,13 @@ export default function Header() {
     <header className={"flex justify-center sticky top-0"}>
       <nav className="container flex items-center mt-5 mb-5 justify-around">
         <div className="w-44 object-contain lg:pl-0 pl-8">
-          <img src={logo} alt="Holmgrens bygg och service" />
+          <a href="/"><img src={logo} alt="Holmgrens bygg och service" /></a>
         </div>
         <div className="">
           <ul className="hidden sm:flex flex-1 justify-end items-center gap-12 text-white uppercase text-s font-bold drop-shadow-xl">
             <NavItem text="Hem" link="/" />
             <NavItem text="Våra projekt" link="#galleri" />
-            <NavItem text="Om oss" link="#omoss"/>
+            <NavItem text="Om oss" link="#omoss" />
             <NavItem text="Kontakt" link="/kontakt" />
             <NavIcon image={fb} alt="Facebook" link="https://www.facebook.com/Holmgrens-Bygg-Service-101504525041548"></NavIcon>
             <NavIcon image={insta} alt="Instagram" link="https://www.instagram.com/holmgrensbyggservice/"></NavIcon>
