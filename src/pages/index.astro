@@ -5,6 +5,8 @@ import About from '../components/home/About.jsx';
 import Gallery from '../components/home/Gallery.jsx';
 import Footer from '../components/home/Footer.jsx';
 
+import Spacer from '../components/Spacer.astro';
+
 ---
 <html lang="en" style="scroll-behavior: smooth">
   <head>
@@ -21,11 +23,14 @@ import Footer from '../components/home/Footer.jsx';
     <script src="https://kit.fontawesome.com/914921b4ef.js" crossorigin="anonymous"></script>
   </head>
 
-  <body class="bg-navy bg-house-min bg-auto bg-no-repeat">
-    <Header />
-    <Showcase client:load />
+  <body class="bg-navy">
+    <div class="bg-house-min bg-auto bg-no-repeat h-screen-85">
+      <Header />
+      <Showcase client:load />
+    </div>
+    <Spacer />
     <About />
-    <Gallery client:visible /> <!-- TODO: Should this be client:visible? -->
+    <Gallery /> <!-- TODO: Should this be client:visible? -->
     <Footer />
   </body>
 </html>
