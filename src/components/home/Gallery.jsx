@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Gallery() {
   return (
-    <section id="galleri" className="">
+    <section id="galleri" className="mt-12">
       <h1 className="text-4xl font-bold text-white text-center">Tidigare projekt</h1>
-      <div className="grid grid-cols-2 mt-24 mx-4 bg-navy">
+      <div className="flex flex-col xl:flex-row justify-around mt-12 mx-4">
         <div>
           <iframe
             className="rounded-xl shadow-md overflow-hidden"

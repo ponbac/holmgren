@@ -26,7 +26,7 @@ export default function About() {
     //   </div>
     // </div>
 
-    <section id="omoss">
+    <section id="omoss" className="-mt-16">
       <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-4xl">
         <div className="md:flex">
           <div className="md:flex-shrink-0">

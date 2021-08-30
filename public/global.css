@@ -23,7 +23,13 @@
     transform: rotate(180deg);
   }
 
-  .h-screen-85 {
-    height: 85vh;
+  .h-screen-90 {
+    height: 90vh;
+  }
+
+  .absolute-spacer {
+    width: 100%;
+    position: absolute;
+    top: 50vh;
   }
 }
